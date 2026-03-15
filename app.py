@@ -6,6 +6,15 @@ from sklearn.ensemble import GradientBoostingClassifier
 
 # --- 1. PAGE SETUP ---
 st.set_page_config(page_title="Smartphone Addiction Predictor", page_icon="📱", layout="centered")
+# --- HIDE STREAMLIT BRANDING ---
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
 st.title("📱 Smartphone Addiction Risk Predictor")
 st.markdown("Developed by **Team CU_CP_Team_14387**")
 st.write("Adjust the sliders below to see our Machine Learning model predict the risk of smartphone addiction in real-time based on usage patterns.")
